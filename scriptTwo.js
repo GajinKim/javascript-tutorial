@@ -6,6 +6,15 @@ sayHello2 = () => {
     console.log('hello2');
 };
 
+// return is not implied for functions with brackets 
+// var someUselessFunction = (number, square) => {
+//     square(number);
+// };
+
+// does not return square(number), unlike
+
+// var someUselessFunction = (number, square) => square(number);
+
 sayHello3 = () => console.log('hello3');
 
 var myName = "David Beckham";
@@ -22,6 +31,6 @@ console.log('here is a number', aBigNumber());
 
 var square = (number) => number**2;
 
-var someUselessFunction = (number, square) => square(number);
+var someUselessFunction = (number, square) => square
 
 console.log('something', someUselessFunction(42,square));
