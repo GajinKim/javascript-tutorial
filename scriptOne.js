@@ -1,12 +1,9 @@
-
-// creates an alert requesting a user input
-// var myName = window.prompt("What's your name?");
+var myName = window.prompt("What's your name?"); 
 
 document.getElementById("myButton").onclick = () => {
     var myName = document.getElementById("myText").value;
     console.log('hello, my name is', myName);
 }
-
 
 var age = 'a string';
 age = Number(age); // converts to NaN
